@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/app.js" defer></script>
   </head>
   <body>
-    <div id="tbd">Coming Soon</div>
+    <!-- <div id="tbd">Coming Soon</div> -->
     <div id="container">
       <div class='loading'>
           <div class='load-icon'></div>
@@ -20,9 +22,9 @@
         <div id='header-box'>
           <h3>Alessa Messineo</h3>
           <div class ='media-icons'>
-            <a href="https://github.com/alessapm"><img class="logo" src="css/logos/github-sign.png"></a>
-            <a href="mailto:apmessineo@gmail.com?Subject=Re: Developer Portfolio"><img class="logo" src="css/logos/mail-logo.png"></a>
-            <a href="https://www.linkedin.com/in/alessa-messineo/"><img class="logo" src="css/logos/linkedin-logo.png"></a>
+            <a href="https://github.com/alessapm"><img class="logo" id="logo3"src="css/logos/github-sign.png"></a>
+            <a href="mailto:apmessineo@gmail.com?Subject=Re: Developer Portfolio"><img class="logo" id="logo2" src="css/logos/mail-logo.png"></a>
+            <a href="https://www.linkedin.com/in/alessa-messineo/"><img class="logo" id="logo1" src="css/logos/linkedin-logo.png"></a>
           </div>
         </div>
           <div class='intro'>
@@ -32,12 +34,12 @@
             When I'm not busy working, I'm off exploring the city, reading, or cooking up something delicious.
             </p><br><br><br><br>
           </div>
-          <p class="checkout"><a href="#projectJump">( Scroll )</a></p>
+          <p class="checkout"><a href="#projectJump">&#8681</a></p>
       </header>
       <main>
         <a name="projectJump"></a>
 
-        <div class="project" id="project1">
+        <div class="project">
           <div class="single-project" id="single1">
             <h2>Remote Reads <span class="pipe">|</span> A Digital Bookclub</h2>
 
@@ -46,8 +48,8 @@
           <div class="project-details">
             <div class="show-project">
 
-              <div class="visit" id="remote1">
-                <div class="visit-links">
+              <div class="visit" id="project1">
+                <div class="visit-links" id="visit1">
                   <div class="visit-here">
                     <a href="https://remote-read.herokuapp.com/books/">Visit Website</a>
                   </div><br>
@@ -64,15 +66,9 @@
                 <li>PSQL</li>
                 <li>HTML/CSS</li>
               </ul>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Doloremque quae unde in, accusantium placeat pariatur
-                molestiae debitis rerum amet iste voluptate illum, minus nam ab
-                 hic nobis perferendis quasi eligendi! <br>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Tenetur consectetur blanditiis autem non eum odit,
-                 fuga explicabo deleniti, delectus pariatur temporibus
-                  molestiae ab, praesentium aperiam maxime nulla.
-                  Exercitationem, quisquam, quam. </p>
+              <p> Remote Read is designed to function as a book club for friends who live too far apart to get together on a regular basis. "With Remote Read, you never need to let distance ruin your conversation, or your shared love of books!"  <br><br>
+              This is a fullstack MVC application that runs using Node.js with Express.js and renders views via ejs. Users can create accounts, create and join groups, post book club selections to their groups, and comment on the existing selections in the group.
+              My favorite part of building out this project was figuring out how all of the data would relate to each other, so that groups could have multiple posts, groups could have mulitple members, and members could join mulitple groups! </p>
             </div>
 
             </div>
@@ -91,10 +87,11 @@
             <div class="show-project">
 
               <div class="visit" id="project2">
-                <div class="visit-links">
+                <div class="visit-links" id="visit2">
                   <div class="visit-here">
                     <a href="">Visit Website</a>
                   </div><br>
+
                   <div class="visit-here">
                     <a href="https://github.com/alessapm/remote_read">View on GitHub</a>
                     </div>
@@ -104,20 +101,14 @@
               <h3>&#9644 Technologies Used &#9644</h3>
               <ul>
                 <li>React</li>
-                <li>Node.js</li>
                 <li>Yelp API</li>
                 <li>JavaScript</li>
+                <li>Node.js</li>
                 <li>HTML/CSS</li>
               </ul>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Doloremque quae unde in, accusantium placeat pariatur
-                molestiae debitis rerum amet iste voluptate illum, minus nam ab
-                 hic nobis perferendis quasi eligendi! <br>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Tenetur consectetur blanditiis autem non eum odit,
-                 fuga explicabo deleniti, delectus pariatur temporibus
-                  molestiae ab, praesentium aperiam maxime nulla.
-                  Exercitationem, quisquam, qum. </p>
+              <p> This application was created for anyone who feels inundated with all of today's choices. <br>
+                 It uses the Yelp API to grab places based on your geolocation and suggest a restaurant. The user can then choose to search for another place, if desired. Chewser was created in collaboration with <a href ="http://marcelhamel.com"> Marcel Hamel</a>. <br>
+                 The best part of building Chewser was the satisfaction of making an elegant single-page app using React. The next step for Chewser will be developing it using React Native. </p>
 
             </div>
 
@@ -127,14 +118,15 @@
 
         <div class="project">
           <div class="single-project" id="single3">
-            <h2>&#9644 Third Project &#9644</h2>
-            <p>A brief overview of the project</p>
+            <h2>&#9644 getWanderLust &#9644</h2>
+            <p>This project is a photo-inspired travel site that allows users to search beautiful, high-res photos of a city to get inspiration and view these alongside a list of the city’s popular tourist attractions. <br>  The app uses React and Node.js as it's main technologies. It combines Getty Images’ and Yelp’s APIs in order to bring about a paired search that will inspire both the amateur and experienced traveler. <br>
+            </p>
           </div>
           <div class="project-details">
             <div class="show-project">
 
               <div class="visit" id="project3">
-                <div class="visit-links">
+                <div class="visit-links" id="visit3">
                   <div class="visit-here">
                     <a href="">Visit Website</a>
                   </div><br>
@@ -147,7 +139,11 @@
               <h3>Technologies Used</h3>
               <ul>
                 <li>Node.js</li>
+                <li>React</li>
                 <li>JavaScript</li>
+                <li>Axios</li>
+                <li>Getty Images API</li>
+                <li>Yelp API</li>
                 <li>PSQL</li>
                 <li>HTML/CSS</li>
               </ul>
