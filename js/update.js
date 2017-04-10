@@ -12,6 +12,8 @@ $(document).ready(function(){
   const visit2 = $('#visit2');
   const visit3 = $('#visit3');
 
+  let linksBoolean = true;
+
   //loading screen animation:
   loadScreen.css('visibility', 'visible');
 
@@ -24,9 +26,10 @@ $(document).ready(function(){
 
   const pulse = setTimeout(function(){
     $('.checkout').addClass('pulsing');
-  }, 5000);
+  }, 4000);
 
 // visit-links click event:
+
   function showlinks1(){
     project1.css({
       'background-color': 'rgba(83,60,49,.55)',
@@ -34,6 +37,15 @@ $(document).ready(function(){
     })
 
     visit1.css('opacity','1')
+  }
+
+  function hidelinks1(){
+    project1.css({
+      'background-image': 'url("./css/images/remote_read.png")'
+    });
+
+    visit1.css('opacity','1');
+    console.log('hidelinks1 clicked')
   }
 
   function showlinks2(){
@@ -55,11 +67,35 @@ $(document).ready(function(){
   }
 
 
-project2.on('click', showlinks2);
+function links(){
+  if (linksBoolean){
+    project1.css({
+      'background-color': 'rgba(83,60,49,.55)',
+      'background-image': 'none'
+    })
 
-project1.on('click', showlinks1);
+    visit1.css('opacity','1');
+    linksBoolean = false;
+  } else {
+    project1.css({
+      'background-image': 'url("./css/images/remote_read.png")'
+    });
 
-project3.on('click', showlinks3);
+    visit1.css('opacity','0');
+    console.log('hidelinks1 clicked');
+    linksBoolean = true;
+  }
+}
+
+// project1.on('click', links);
+
+// project1.toggle('fast', 'swing', showlinks1, hidelinks1);
+
+// project2.on('click', showlinks2);
+
+// project3.on('click', showlinks3);
+
+
 
 
 
