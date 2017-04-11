@@ -48,6 +48,73 @@ $(document).ready(function(){
 
 
 
+// visit-links click event:
+
+//   function showlinks1(){
+//     project1.css({
+//       'background-color': 'rgba(83,60,49,.55)',
+//       'background-image': 'none'
+//     })
+
+//     visit1.css('opacity','1')
+//   }
+
+//   function hidelinks1(){
+//     project1.css({
+//       'background-image': 'url("./css/images/remote_read.png")'
+//     });
+
+//     visit1.css('opacity','1');
+//     console.log('hidelinks1 clicked')
+//   }
+
+//   function showlinks2(){
+//     project2.css({
+//       'background-color': 'rgba(83,60,49,.55)',
+//       'background-image': 'none'
+//     })
+
+//     visit2.css('opacity','1')
+//   }
+
+//   function showlinks3(){
+//     project3.css({
+//       'background-color': 'rgba(83,60,49,.55)',
+//       'background-image': 'none'
+//     })
+
+//     visit3.css('opacity','1')
+//   }
+
+
+// function links(){
+//   if (linksBoolean){
+//     project1.css({
+//       'background-color': 'rgba(83,60,49,.55)',
+//       'background-image': 'none'
+//     })
+
+//     visit1.css('opacity','1');
+//     linksBoolean = false;
+//   } else {
+//     project1.css({
+//       'background-image': 'url("./css/images/remote_read.png")'
+//     });
+
+//     visit1.css('opacity','0');
+//     console.log('hidelinks1 clicked');
+//     linksBoolean = true;
+//   }
+// }
+
+// project1.on('click', links);
+
+// project1.toggle('fast', 'swing', showlinks1, hidelinks1);
+
+// project2.on('click', showlinks2);
+
+// project3.on('click', showlinks3);
+
 
 
 

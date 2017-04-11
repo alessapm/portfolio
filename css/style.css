@@ -617,9 +617,16 @@ footer {
 
     .single-project {
       height: 200px;
+
+    }
+
+    .single-project h1{
+      font-size: 2rem;
     }
 
     #single3 img {
       width: 300px;
     }
+
+
 }
