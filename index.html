@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alessa Messineo</title>
+    <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- materialize css -->
     <!-- <link rel="stylesheet" href="materialize/css/materialize.min.css"> -->
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Materialize -->
-    <script src="materialize/js/materialize.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- <script src="materialize/js/materialize.min.js" type="text/javascript" charset="utf-8" async defer></script> -->
     <!-- app.js -->
     <script type="text/javascript" src="./js/update.js" defer></script>
 
@@ -36,20 +39,17 @@
           <div class="intro">
             <h1>Alessa Messineo</h1>
             <h2>Web Developer</h2><br><br>
-            <p>Hello! I am a full-stack web developer based out of New York City who loves to talk about new ideas.  I like putting my creative problem solving skills to work by building beautiful, dynamic websites.<br><br>
-            When I'm not busy working, I'm off exploring the city, reading, or cooking up something delicious.
-            </p><br><br><br><br>
+            <p class="hello">Hello! I am a full-stack web developer based out of New York City who loves to talk about new ideas.  I like putting my creative problem solving skills to work by building beautiful, dynamic websites.</p><br>
+            <p class="notbusy">When I'm not busy working, I'm off exploring the city, reading, or cooking up something delicious. </p><br><br>
           </div>
           <p class="checkout"><a href="#projectJump">&#8681</a></p>
       </header>
       <main>
         <a name="projectJump"></a>
 
-        <div class="parallax-container project">
-          <div class="single-project parallax" id="single1">
-            <h2>Remote Reads <span class="pipe">|</span> A Digital Bookclub</h2>
+        <div class="project">
+          <div class="single-project" id="single1">
 
-            <p>A Node.js application designed for book lovers to create private groups and forums for book discussions.</p>
           </div>
           <div class="project-details">
             <div class="show-project">
@@ -65,17 +65,19 @@
                 </div>
               </div>
               <div class="tech-used">
-              <h3>&#9644 Technologies Used &#9644</h3>
-              <ul>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>JavaScript</li>
-                <li>PSQL</li>
-                <li>HTML/CSS</li>
-              </ul>
-              <p> Remote Read is designed to function as a book club for friends who live too far apart to get together on a regular basis. "With Remote Read, you never need to let distance ruin your conversation, or your shared love of books!"  <br><br>
-              This is a fullstack MVC application that runs using Node.js with Express.js and renders views server side via ejs. Users can create accounts, create and join groups, post book club selections to their groups, and comment on the existing selections in the group.
-              My favorite part of building out this project was figuring out how all of the data would relate to each other, so that groups could have multiple posts, groups could have mulitple members, and members could join mulitple groups! </p>
+
+                <h3>&#9644 Technologies Used &#9644</h3>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>JavaScript</li>
+                  <li>PSQL</li>
+                  <li>HTML/CSS</li>
+                </ul>
+                <p class="description">A Node.js application designed for book lovers to create private groups and for book club style discussions.</p>
+                <p> Remote Read is designed to function as a book club for friends who live too far apart to get together on a regular basis. With Remote Read, you never need to let distance ruin your conversation, or your shared love of books! <br><br>
+                 Users can create accounts, create and join groups, post book club selections to their groups, and comment on the existing selections in the group.
+                 </p>
             </div>
 
             </div>
@@ -83,12 +85,10 @@
           </div>
         </div>
 
-        <div class="parallax-container project">
-          <div class="single-project parallax" id="single2">
-          <h2>Chewser</h2>
-          <p>A React app that searches your area for local restaurants
-           and selects an option for you.<br> No more wasting time deciding on where to eat-
-           let Chewser choose for you!</p>
+        <div class="project">
+          <div class="single-project" id="single2">
+
+
           </div>
           <div class="project-details">
             <div class="show-project">
@@ -105,17 +105,17 @@
                 </div>
               </div>
               <div class="tech-used">
-              <h3>&#9644 Technologies Used &#9644</h3>
-              <ul>
-                <li>React</li>
-                <li>Yelp API</li>
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>HTML/CSS</li>
-              </ul>
-              <p> This application was created for anyone who feels inundated with all of today's choices. <br><br>
-                 It uses the Yelp API to grab places based on your geolocation and suggest a restaurant. The user can then choose to search for another place, if desired. Chewser was created in collaboration with <a href ="http://marcelhamel.com" target="_blank"> Marcel Hamel</a>.
-                 The best part of building Chewser was the satisfaction of making an elegant single-page app using React. The next step for Chewser will be developing it using React Native. </p>
+
+                <h3>&#9644 Technologies Used &#9644</h3>
+                <ul>
+                  <li>React</li>
+                  <li>Yelp API</li>
+                  <li>JavaScript</li>
+                  <li>Node.js</li>
+                  <li>HTML/CSS</li>
+                </ul>
+                <p class="description">A React app that searches your area for  local restaurants and selects an option for you. No more wasting time deciding on where to eat- let Chewser choose for you!</p>
+                <p> It uses the Yelp API to grab places based on your geolocation and suggest a restaurant. The user can then choose to search for another place, if desired. Chewser was created in collaboration with <a href ="http://marcelhamel.com" target="_blank"> Marcel Hamel</a>.</p>
 
             </div>
 
@@ -123,11 +123,9 @@
           </div>
         </div>
 
-        <div class="parallax-container project">
-          <div class="single-project parallax" id="single3">
-            <h2> getWanderLust </h2>
-            <p>A photo-inspired travel site that allows users to search beautiful, high-res photos of a city to get inspiration <br>and view these alongside a list of the city’s popular tourist attractions.
-            </p>
+        <div class="project">
+          <div class="single-project" id="single3">
+
           </div>
           <div class="project-details">
             <div class="show-project">
@@ -143,6 +141,7 @@
                 </div>
               </div>
             <div class="tech-used">
+
               <h3>&#9644 Technologies Used &#9644</h3>
               <ul>
                 <li>Node.js</li>
@@ -154,12 +153,29 @@
                 <li>PSQL</li>
                 <li>HTML/CSS</li>
               </ul>
-              <p> The app uses React and Node.js as it's main technologies. It combines Getty Images’ and Yelp’s APIs in order to bring about a paired search that will inspire both the amateur and experienced traveler. getWanderlust is the a truly photo-inspired travel site, allowing you to feed your wanderlust by viewing crave-worthy photos of your desired destinations. </p>
+              <p class="description">A photo-inspired travel site that allows users to search beautiful, high-res photos of a city to get inspiration <br>and view these alongside a list of the city’s popular tourist attractions.</p>
+              <p> The app uses React and Node.js as it's main technologies. It combines Getty Images’ and Yelp’s APIs in order to bring about a paired search that will inspire both the amateur and experienced traveler. </p>
             </div>
 
             </div>
           </div>
         </div>
+        <footer>
+          <div class="finale">
+            <div class="statement">
+              <h4>More About Me </h4>
+              <p>I am a native New Yorker, a sci-fi enthusiast, and a lover of gourmet supermarkets. Most importantly, I am an ambitious young woman looking to combine my web development skills and previous professional experiences in order to benefit others. I am an organized, energetic, and purpose-driven problem solver who is looking to apply my skills and ideas to working with new technologies and building beautiful applications. </p>
+            </div>
+            <div class ="contact-me">
+              <h3 class="thank-you">Thank you for visiting my portfolio site, I'd love to talk to you about my work and experiences. <br><br> Connect with me for job opportunities,<br> small talk, or to grab coffee</h3>
+              <div class="contact-icons">
+                <a href="https://github.com/alessapm" target="_blank"><img class="logo" src="css/logos/github-blue.png"></a>
+                <a href="mailto:apmessineo@gmail.com?Subject=Re: Developer Portfolio" target="_blank"><img class="logo" src="css/logos/mail-blue.png"></a>
+                <a href="https://www.linkedin.com/in/alessa-messineo/" target="_blank"><img class="logo" src="css/logos/linkedin-blue.png"></a>
+              </div>
+            </div>
+          </div>
+        </footer>
 
       </main>
     </div>

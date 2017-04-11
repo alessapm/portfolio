@@ -12,7 +12,7 @@ $(document).ready(function(){
   const visit2 = $('#visit2');
   const visit3 = $('#visit3');
 
-  let linksBoolean = true;
+  // let linksBoolean = true;
 
   //loading screen animation:
   loadScreen.css('visibility', 'visible');
@@ -28,64 +28,84 @@ $(document).ready(function(){
     $('.checkout').addClass('pulsing');
   }, 4000);
 
+
+  setInterval(function(){
+    let scroll = $(window).scrollTop();
+
+     console.log('scroll registering as ', $(window).scrollTop())
+
+      if (scroll > 3200){
+        $('.media-icons').css('visibility', 'hidden');
+        console.log('visibility is hidden');
+      } else {
+        $('.media-icons').css('visibility', 'visible');
+        console.log('visibility is visible')
+      }
+
+  }, 700) //closes setInterval
+
+
+
+
+
 // visit-links click event:
 
-  function showlinks1(){
-    project1.css({
-      'background-color': 'rgba(83,60,49,.55)',
-      'background-image': 'none'
-    })
+//   function showlinks1(){
+//     project1.css({
+//       'background-color': 'rgba(83,60,49,.55)',
+//       'background-image': 'none'
+//     })
 
-    visit1.css('opacity','1')
-  }
+//     visit1.css('opacity','1')
+//   }
 
-  function hidelinks1(){
-    project1.css({
-      'background-image': 'url("./css/images/remote_read.png")'
-    });
+//   function hidelinks1(){
+//     project1.css({
+//       'background-image': 'url("./css/images/remote_read.png")'
+//     });
 
-    visit1.css('opacity','1');
-    console.log('hidelinks1 clicked')
-  }
+//     visit1.css('opacity','1');
+//     console.log('hidelinks1 clicked')
+//   }
 
-  function showlinks2(){
-    project2.css({
-      'background-color': 'rgba(83,60,49,.55)',
-      'background-image': 'none'
-    })
+//   function showlinks2(){
+//     project2.css({
+//       'background-color': 'rgba(83,60,49,.55)',
+//       'background-image': 'none'
+//     })
 
-    visit2.css('opacity','1')
-  }
+//     visit2.css('opacity','1')
+//   }
 
-  function showlinks3(){
-    project3.css({
-      'background-color': 'rgba(83,60,49,.55)',
-      'background-image': 'none'
-    })
+//   function showlinks3(){
+//     project3.css({
+//       'background-color': 'rgba(83,60,49,.55)',
+//       'background-image': 'none'
+//     })
 
-    visit3.css('opacity','1')
-  }
+//     visit3.css('opacity','1')
+//   }
 
 
-function links(){
-  if (linksBoolean){
-    project1.css({
-      'background-color': 'rgba(83,60,49,.55)',
-      'background-image': 'none'
-    })
+// function links(){
+//   if (linksBoolean){
+//     project1.css({
+//       'background-color': 'rgba(83,60,49,.55)',
+//       'background-image': 'none'
+//     })
 
-    visit1.css('opacity','1');
-    linksBoolean = false;
-  } else {
-    project1.css({
-      'background-image': 'url("./css/images/remote_read.png")'
-    });
+//     visit1.css('opacity','1');
+//     linksBoolean = false;
+//   } else {
+//     project1.css({
+//       'background-image': 'url("./css/images/remote_read.png")'
+//     });
 
-    visit1.css('opacity','0');
-    console.log('hidelinks1 clicked');
-    linksBoolean = true;
-  }
-}
+//     visit1.css('opacity','0');
+//     console.log('hidelinks1 clicked');
+//     linksBoolean = true;
+//   }
+// }
 
 // project1.on('click', links);
 
