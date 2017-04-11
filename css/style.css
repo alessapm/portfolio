@@ -403,9 +403,10 @@ footer {
 
 
 #single1 {
-  background-image: url("images/remoteread.png");
+  /*background-image: url("images/remoteread.png");*/
+  background-color: rgba(78,146,154,.5);
   background-size: 100% 100%;
-  color: rgba(255,255,255,1);*/
+  color: rgba(255,255,255,1);
 
 
 }
@@ -425,10 +426,10 @@ footer {
 
 #single2 {
 
-  background-image: url("images/chewser.png");
+  /*background-image: url("images/chewser.png");*/
   background-size: 100% 100%;
-  /*color: rgba(255,255,255,1);*/
-  /*color: rgba(83,60,49,.55);*/
+  background-color: rgba(78,146,154,.5);
+  color: rgba(255,255,255,1);
 }
 
 #project2 {
@@ -443,13 +444,18 @@ footer {
   transition: all 1.5s ease;
 }
 
-#single3 {/*
-  background-color: lightgray;
-  background-image: url("images/himesh-behera-216019.jpg");*/
-  background-image: url("images/gWL.png");
+#single3 {
+
+  /*background-image: url("images/gWL.png");*/
+  background-color: rgba(78,146,154,.5);
   background-size: 100% 100%;
-  /*color: rgba(255,255,255,1);*/
-  /*color: rgba(83,60,49,.55);*/
+  color: rgba(255,255,255,1);
+  display: flex;
+  align-items: center;
+}
+
+#single3 img {
+  width: 500px;
 }
 
 #project3 {
@@ -471,7 +477,7 @@ footer {
 
 /*                        MEDIA QUERIES                  */
 
-@media (max-width: 1400px){
+@media (max-width: 1100px){
   header {
     height: 750px
   }
@@ -609,5 +615,9 @@ footer {
 
     .show-project {
       margin: 0;
+    }
+
+    .single-project {
+      height: 200px;
     }
 }
