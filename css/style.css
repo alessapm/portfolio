@@ -582,6 +582,10 @@ footer {
       font-size: 1.3rem;
     }
 
+    #single3 img {
+      width: 400px;
+    }
+
     footer {
       height: 700px;
     }
