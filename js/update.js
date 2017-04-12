@@ -50,70 +50,100 @@ $(document).ready(function(){
 
 // visit-links click event:
 
-//   function showlinks1(){
-//     project1.css({
-//       'background-color': 'rgba(83,60,49,.55)',
-//       'background-image': 'none'
-//     })
+  function showlinks1(){
+    project1.css({
+      'background-color': 'rgba(83,60,49,.55)',
+      'background-image': 'none'
+    })
 
-//     visit1.css('opacity','1')
-//   }
+    visit1.css('opacity','1')
+  }
 
-//   function hidelinks1(){
-//     project1.css({
-//       'background-image': 'url("./css/images/remote_read.png")'
-//     });
+  function hidelinks1(){
+    project1.css({
+      'background-image': 'url("./css/images/remoteread-detail.png")'
+    });
 
-//     visit1.css('opacity','1');
-//     console.log('hidelinks1 clicked')
-//   }
+    visit1.css('opacity','0');
+    console.log('hidelinks1 clicked')
+  }
 
-//   function showlinks2(){
-//     project2.css({
-//       'background-color': 'rgba(83,60,49,.55)',
-//       'background-image': 'none'
-//     })
+  function showlinks2(){
+    project2.css({
+      'background-color': 'rgba(83,60,49,.55)',
+      'background-image': 'none'
+    })
 
-//     visit2.css('opacity','1')
-//   }
+    visit2.css('opacity','1')
+  }
 
-//   function showlinks3(){
-//     project3.css({
-//       'background-color': 'rgba(83,60,49,.55)',
-//       'background-image': 'none'
-//     })
+  function hidelinks2(){
+    project2.css({
+      'background-image': 'url("./css/images/chewser-detail.png")'
+    });
 
-//     visit3.css('opacity','1')
-//   }
+    visit2.css('opacity','0');
+
+  }
+
+  function showlinks3(){
+    project3.css({
+      'background-color': 'rgba(83,60,49,.55)',
+      'background-image': 'none'
+    })
+
+    visit3.css('opacity','1')
+  }
+
+  function hidelinks3(){
+    project3.css({
+      'background-image': 'url("./css/images/gWL-detail2.png")'
+    });
+
+    visit3.css('opacity','0');
+
+  }
 
 
-// function links(){
-//   if (linksBoolean){
-//     project1.css({
-//       'background-color': 'rgba(83,60,49,.55)',
-//       'background-image': 'none'
-//     })
 
-//     visit1.css('opacity','1');
-//     linksBoolean = false;
-//   } else {
-//     project1.css({
-//       'background-image': 'url("./css/images/remote_read.png")'
-//     });
+let click1 = 1;
+project1.on('click', function(){
+  if (click1%2 !== 0){
+    showlinks1();
+    click1++;
+  } else {
+    hidelinks1();
+    click1++;
+  }
 
-//     visit1.css('opacity','0');
-//     console.log('hidelinks1 clicked');
-//     linksBoolean = true;
-//   }
-// }
+});
 
-// project1.on('click', links);
 
-// project1.toggle('fast', 'swing', showlinks1, hidelinks1);
 
-// project2.on('click', showlinks2);
+let click2 = 1;
+project2.on('click', function(){
+  if (click2%2 !== 0){
+    showlinks2();
+    click2++;
+  } else {
+    hidelinks2();
+    click2++;
+  }
 
-// project3.on('click', showlinks3);
+});
+
+
+let click3 = 1;
+project3.on('click', function(){
+  if (click3%2 !== 0){
+    showlinks3();
+    click3++;
+  } else {
+    hidelinks3();
+    click3++;
+  }
+
+});
 
 
 
