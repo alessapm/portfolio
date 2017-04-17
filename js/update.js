@@ -19,6 +19,12 @@ $(document).ready(function(){
 
   function loading() {
     loadScreen.css('visibility', 'hidden');
+    $('.load-icon').css({
+      'width': '0px',
+      'height': '0px',
+      'border': '0px solid'
+
+    })
   }
 
 
@@ -65,7 +71,7 @@ $(document).ready(function(){
     });
 
     visit1.css('opacity','0');
-    console.log('hidelinks1 clicked')
+
   }
 
   function showlinks2(){
@@ -97,7 +103,7 @@ $(document).ready(function(){
 
   function hidelinks3(){
     project3.css({
-      'background-image': 'url("./css/images/gWL-detail2.png")'
+      'background-image': 'url("./css/images/gWL-detail.png")'
     });
 
     visit3.css('opacity','0');
