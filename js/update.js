@@ -40,7 +40,7 @@ $(document).ready(function(){
 
      // console.log('scroll registering as ', $(window).scrollTop())
 
-      if (scroll > 3200){
+      if (scroll > 1300){
         $('.media-icons').css('visibility', 'hidden');
         // console.log('visibility is hidden');
       } else {
@@ -58,7 +58,7 @@ $(document).ready(function(){
 
   function showlinks1(){
     project1.css({
-      'background-color': 'rgba(83,60,49,.55)',
+      'background-color': 'rgb(44,55,54)',
       'background-image': 'none'
     })
 
@@ -76,7 +76,7 @@ $(document).ready(function(){
 
   function showlinks2(){
     project2.css({
-      'background-color': 'rgba(83,60,49,.55)',
+      'background-color': 'rgb(44,55,54)',
       'background-image': 'none'
     })
 
@@ -94,7 +94,7 @@ $(document).ready(function(){
 
   function showlinks3(){
     project3.css({
-      'background-color': 'rgba(83,60,49,.55)',
+      'background-color': 'rgb(44,55,54)',
       'background-image': 'none'
     })
 
