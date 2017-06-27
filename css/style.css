@@ -1,39 +1,26 @@
 body {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background-image: url("images/swirl_pattern.png");
 }
 
 #container {
+
   font-family: 'Roboto', sans-serif;
   height: 100%;
   width: 100%;
-  background-color: rgba(78,146,154, .7);
-  border: 2px white solid;
 }
 
 header {
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: center;
-  /*background-image: url("images/drew-collins-207956.jpg");*/
-  /*background-size: 100% 100%;*/
-  height: 370px;
+  background-image: url("images/drew-collins-207956.jpg");
+  background-size: 100% 100%;
+  height: 670px;
   width: 100%;
-  /*background-color: rgba(83,60,49,.55);*/
-  /*color: rgba(78,146,154,1);*/
-  /*color: rgba(80,80,80,.8);*/
-  /*color: rgba(78,146,154, 1);*/
-  color: white;
-  /*box-shadow: 0px 2px 10px rgba(1,1,1,.8);*/
+  background-color: rgba(83,60,49,.55);
+  color: rgba(255,255,255,1);
+  box-shadow: 0px 2px 10px rgba(1,1,1,.8);
   margin-bottom: 0;
-
-}
-
-header h2 {
-  margin: 0;
 }
 
 #header-box{
@@ -150,7 +137,7 @@ header h2 {
 }*/
 
 .intro {
-  padding-top: 10px;
+  padding-top: 50px;
   padding-left: 220px;
   padding-right: 220px;
 
@@ -268,13 +255,15 @@ main {
   border: 2px solid rgba(245,245,245,1);
   margin-top: 10%;
   /*padding-bottom: 100px;*/
-  width: 40%;
+  width: 30%;
   background-color: rgba(171,169,163, .1);
   /*border-radius: 40px;*/
+
+
 }
 
 .single-project{
-  height: 150px;
+  height: 200px;
   width: 100%;
   /*margin-bottom: 100px;*/
   /*margin-bottom: 20px;*/
@@ -296,21 +285,23 @@ main {
 
 .project-details{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .show-project{
   display: flex;
-  width: 100%;
+  flex-direction: column;
 }
 
 .visit{
+
   height: 350px;
+  width: 100%;
   cursor: pointer;
-  flex: 1;
 }
 
 .visit-links {
+  opacity: 0;
   position: relative;
   height: 100%;
   width: 100%;
@@ -323,20 +314,27 @@ main {
 
 .visit-here {
   height: 20%;
-  border: 2px white solid;
-  width: 70%;
+  border: 5px white solid;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 1.5s ease;
-  color: white;
+
 }
 
-/*.visit-here a {
+.visit-here a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
-}*/
+}
+
+
+
+.visit-links:hover {
+  opacity: 1;
+}
+
 
 ul{
   list-style: none;
@@ -344,16 +342,15 @@ ul{
 }
 
 .tech-used{
-  /*width: 100%;*/
+
+  width: 100%;
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
-  background-color: rgba(78,146,154,.5);
-  flex: 1;
-  color: white;
+
 }
 
 .tech-used ul {
@@ -372,11 +369,11 @@ ul{
 
 .tech-used a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .tech-used a:hover {
-  color: rgba(161,248,142,.5);
+  color: rgba(161,148,142,1);
   font-weight: bold;
 }
 
@@ -394,14 +391,14 @@ ul{
 }
 
 
+
+
 footer {
   margin-top: 100px;
   background-color: rgba(78,146,154,.5);
   height: 400px;
   display: flex;
   align-content: center;
-  /*color: rgba(78,146,154,1);*/
-  color: white;
 }
 
 .statement {
@@ -446,11 +443,11 @@ footer {
 }
 
 
-/*#project1:hover {
+#project1:hover {
   background-color: rgb(44,55,54);
   background-image: none;
   transition: all 1.5s ease;
-}*/
+}
 
 #single2 {
 
@@ -467,13 +464,15 @@ footer {
   transition: all 1.5s ease;
 }
 
-/*#project2:hover {
+#project2:hover {
    background-color: rgb(44,55,54);
   background-image: none;
   transition: all 1.5s ease;
-}*/
+}
 
 #single3 {
+
+
   background-color: rgba(78,146,154,.5);
   color: rgba(255,255,255,1);
   display: flex;
@@ -490,11 +489,11 @@ footer {
   transition: all 1.0s ease;
 }
 
-/*#project3:hover {
+#project3:hover {
    background-color: rgb(44,55,54);
   background-image: none;
 
-}*/
+}
 
 #rr {
   transition: all .2s ease;
