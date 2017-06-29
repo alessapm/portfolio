@@ -4,7 +4,6 @@ body {
 }
 
 #container {
-
   font-family: 'Roboto', sans-serif;
   height: 100%;
   width: 100%;
@@ -450,8 +449,6 @@ footer {
 }
 
 #single2 {
-
-  /*background-image: url("images/chewser.png");*/
   background-size: 100% 100%;
   background-color: rgba(78,146,154,.5);
   color: rgba(255,255,255,1);
@@ -470,13 +467,15 @@ footer {
   transition: all 1.5s ease;
 }
 
-#single3 {
-
-
+#single3, #singleBobs, #singleMastermind {
   background-color: rgba(78,146,154,.5);
   color: rgba(255,255,255,1);
   display: flex;
   align-items: center;
+}
+
+#singleMastermind {
+  font-family: 'Bungee Outline', cursive;
 }
 
 #single3 img {
@@ -495,8 +494,54 @@ footer {
 
 }
 
-#rr {
+#singleExposed {
+  background-color: rgba(78,146,154,.5);
+  color: rgba(255,255,255,1);
+  display: flex;
+  align-items: center;
+}
+
+#projectExposed {
+  background-image: url("images/exposed-detail.png");
+  background-size: cover;
+  transition: all 1.0s ease;
+}
+
+#projectExposed:hover {
+  background-color: rgb(44,55,54);
+  background-image: none;
+}
+
+#projectBobs {
+  background-image: url("images/bobs-detail.png");
+  background-size: cover;
+  transition: all 1.0s ease;
+}
+
+#projectBobs:hover {
+  background-color: rgb(44,55,54);
+  background-image: none;
+}
+
+#projectMastermind {
+  background-image: url("images/mastermind-detail.png");
+  background-size: cover;
+  transition: all 1.0s ease;
+}
+
+#projectMastermind:hover {
+  background-color: rgb(44,55,54);
+  background-image: none;
+}
+
+#chew, #exposed, #bobs, #gWL, #rr, #mastermind {
   transition: all .2s ease;
+}
+
+#exposed:hover {
+  z-index: 2;
+  transform: scale(1.01);
+  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
 }
 
 #rr:hover {
@@ -505,21 +550,25 @@ footer {
   box-shadow: 5px 5px 10px rgba(175,175,175,.5);
 }
 
-#gWL {
-  transition: all .2s ease;
-}
-
 #gWL:hover {
   z-index: 2;
   transform: scale(1.01);
   box-shadow: 5px 5px 10px rgba(175,175,175,.5);
 }
 
-#chew {
-  transition: all .2s ease;
+#chew:hover {
+  z-index: 2;
+  transform: scale(1.01);
+  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
 }
 
-#chew:hover {
+#bobs:hover {
+  z-index: 2;
+  transform: scale(1.01);
+  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
+}
+
+#mastermind:hover {
   z-index: 2;
   transform: scale(1.01);
   box-shadow: 5px 5px 10px rgba(175,175,175,.5);
