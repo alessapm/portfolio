@@ -40,7 +40,7 @@ $(document).ready(function(){
 
      // console.log('scroll registering as ', $(window).scrollTop())
 
-      if (scroll > 1300){
+      if (scroll > 2200){
         $('.media-icons').css('visibility', 'hidden');
         // console.log('visibility is hidden');
       } else {
