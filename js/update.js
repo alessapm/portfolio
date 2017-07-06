@@ -8,15 +8,15 @@ $(document).ready(function(){
   const project2 = $('#project2');
   const project3 = $('#project3');
   const projectBobs = $('#projectBobs');
-  const projectExpo = $('#projectExpo');
-  const projectMaster = $('#projectMaster');
+  const projectExpo = $('#projectExposed');
+  const projectMaster = $('#projectMastermind');
 
   const visit1 = $('#visit1');
   const visit2 = $('#visit2');
   const visit3 = $('#visit3');
   const visitBobs = $('#visitBobs');
-  const visitExpo = $('#visitExpo');
-  const visitMaster = $('#visitMaster');
+  const visitExpo = $('#visitExposed');
+  const visitMaster = $('#visitMastermind');
 
 
   //loading screen animation:
@@ -31,7 +31,6 @@ $(document).ready(function(){
 
     })
   }
-
 
   const timeToLoad = setTimeout(loading, 1000);
 
@@ -132,6 +131,39 @@ $(document).ready(function(){
     visitBobs.css('opacity','0');
   }
 
+  function showlinksExpo(){
+    projectExpo.css({
+      'background-color': 'rgb(44,55,54)',
+      'background-image': 'none'
+    })
+    visitExpo.css('opacity', '1');
+  }
+
+  function hidelinksExpo(){
+    projectExpo.css({
+      'background-image': 'url("./css/images/exposed-detail.png")'
+    });
+
+    visitExpo.css('opacity','0');
+  }
+
+  function showlinksMaster(){
+    projectMaster.css({
+      'background-color': 'rgb(44,55,54)',
+      'background-image': 'none'
+    })
+    visitMaster.css('opacity', '1');
+  }
+
+  function hidelinksMaster(){
+    projectMaster.css({
+      'background-image': 'url("./css/images/mastermind-detail.png")',
+    });
+
+    visitMaster.css('opacity','0');
+  }
+
+
 
 
 let click1 = 1;
@@ -191,6 +223,17 @@ projectExpo.on('click', function(){
   } else {
     hidelinksExpo();
     clickExpo++;
+  }
+})
+
+let clickMaster = 1;
+projectMaster.on('click', function(){
+  if (clickMaster%2 !== 0){
+    showlinksMaster();
+    clickMaster++;
+  } else {
+    hidelinksMaster();
+    clickMaster++;
   }
 })
 
