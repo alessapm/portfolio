@@ -7,12 +7,17 @@ $(document).ready(function(){
   const project1 = $('#project1');
   const project2 = $('#project2');
   const project3 = $('#project3');
+  const projectBobs = $('#projectBobs');
+  const projectExpo = $('#projectExpo');
+  const projectMaster = $('#projectMaster');
 
   const visit1 = $('#visit1');
   const visit2 = $('#visit2');
   const visit3 = $('#visit3');
+  const visitBobs = $('#visitBobs');
+  const visitExpo = $('#visitExpo');
+  const visitMaster = $('#visitMaster');
 
-  // let linksBoolean = true;
 
   //loading screen animation:
   loadScreen.css('visibility', 'visible');
@@ -107,7 +112,24 @@ $(document).ready(function(){
     });
 
     visit3.css('opacity','0');
+  }
 
+  function showlinksBobs(){
+    projectBobs.css({
+      'background-color': 'rgb(44,55,54)',
+      'background-image': 'none'
+    })
+
+    visitBobs.css('opacity', '1');
+  }
+
+  function hidelinksBobs(){
+    projectBobs.css({
+      'background-image': 'url("./css/images/bobs-detail.png")',
+      'background-color': 'rgb(251,251,251)'
+    });
+
+    visitBobs.css('opacity','0');
   }
 
 
@@ -148,8 +170,31 @@ project3.on('click', function(){
     hidelinks3();
     click3++;
   }
-
 });
+
+let clickBobs = 1;
+projectBobs.on('click', function(){
+  if (clickBobs%2 !== 0){
+    showlinksBobs();
+    clickBobs++;
+  } else {
+    hidelinksBobs();
+    clickBobs++;
+  }
+})
+
+let clickExpo = 1;
+projectExpo.on('click', function(){
+  if (clickExpo%2 !== 0){
+    showlinksExpo();
+    clickExpo++;
+  } else {
+    hidelinksExpo();
+    clickExpo++;
+  }
+})
+
+
 
 
 
