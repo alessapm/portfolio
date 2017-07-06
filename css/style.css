@@ -28,7 +28,7 @@ header {
   left: 0;
   height: 50px;
   width: 100%;
-  background-color: rgba(245,245,245,1);
+  background-color: rgba(245,245,245,.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
