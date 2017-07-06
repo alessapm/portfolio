@@ -13,7 +13,7 @@ header {
   padding-top: 100px;
   text-align: center;
   background-image: url("images/drew-collins-207956.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   height: 670px;
   width: 100%;
   background-color: rgba(83,60,49,.55);
