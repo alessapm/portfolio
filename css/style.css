@@ -12,7 +12,8 @@ body {
 header {
   padding-top: 100px;
   text-align: center;
-  background-image: url("images/drew-collins-207956.jpg");
+  /*background-image: url("images/drew-collins-207956.jpg");*/
+  background-image: url("images/naphtali.jpg");
   background-size: cover;
   height: 670px;
   width: 100%;
@@ -254,11 +255,8 @@ main {
   margin: 0 auto;
   border: 2px solid rgba(245,245,245,1);
   margin-top: 10%;
-  /*padding-bottom: 100px;*/
   width: 30%;
   background-color: rgba(171,169,163, .1);
-  /*border-radius: 40px;*/
-
 
 }
 
