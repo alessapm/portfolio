@@ -824,13 +824,13 @@ footer {
 
 }
 
-@media (max-width: 400px){
+@media (max-width: 380px){
   .hello {
     font-size: 1.1rem;
   }
 
   .intro h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
 
 }
