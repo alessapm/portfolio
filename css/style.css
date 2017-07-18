@@ -125,6 +125,7 @@ h2 {
   margin-right: 5px;
 }
 
+
 .hello {
   padding-left: 50%;
   letter-spacing: 1.6px;
@@ -597,10 +598,10 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .intro {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 150px;
@@ -741,10 +742,14 @@ footer {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .intro ul {
-    font-size: 2em;
+    font-size: 1.5em;
     flex-direction: column;
+  }
+
+  .vertical-bar {
+    display: none;
   }
 }
 
