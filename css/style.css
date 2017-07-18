@@ -823,3 +823,14 @@ footer {
   }
 
 }
+
+@media (max-width: 400px){
+  .hello {
+    font-size: 1.1rem;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+}
