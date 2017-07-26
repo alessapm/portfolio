@@ -57,7 +57,6 @@ $(document).ready(function(){
 
 
 
-
 // visit-links click event:
 
   function showlinks1(){
