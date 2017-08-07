@@ -86,6 +86,7 @@ header {
 
 h2 {
   font-size: 2rem;
+  max-width: 450px;
 }
 
 .intro h2 {
@@ -170,36 +171,6 @@ main {
   text-align: center;
   margin-top: 0px;
 }
-
-/*.loading {
-  visibility: hidden;
-  opacity: .95;
-  position: absolute;
-  z-index: 10;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(12,12,12,1);
-}*/
-
-/*.load-icon {
-  position: absolute;
-  height: 70px;
-  width: 70px;
-  margin: auto;
-  top: calc(50vh - 70px);
-  left: calc(50% - 70px);
-
-  border-radius: 50%;
-  border: 10px solid rgba(197,176,156,1);
-  border-top: 10px solid rgba(78,146,154,1);
-
-  animation: load 2s ease-in-out infinite;
-}*/
-
-/*@keyframes load {
-  0% { transform: rotate(0deg) }
-  100% { transform: rotate(360deg) }
-}*/
 
 .all-projects {
   display: flex;
@@ -779,6 +750,10 @@ footer {
     height: 1500px;
   }
 
+  .intro h2 {
+    max-width: 350px;
+  }
+
   footer {
     height: 800px;
     width: 100%;
@@ -846,6 +821,9 @@ footer {
     font-size: 1.1rem;
   }
 
+  .intro h2 {
+    max-width: 300px;
+  }
 
 
 }
