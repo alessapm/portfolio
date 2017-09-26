@@ -1,3 +1,5 @@
+/* BLUE - rgba(78,146,154,.35);*/
+
 body {
   height: 100%;
   width: 100%;
@@ -209,20 +211,20 @@ main {
 
 .project {
   margin: 0 auto;
-  border: 2px solid rgba(245,245,245,1);
-  margin-top: 10%;
+  border: 2px solid rgba(78,146,154,.35);
+  margin-top: 200px;
   width: 30%;
-  background-color: rgba(171,169,163, .1);
+  height: 600px;
 }
 
 .single-project{
-  height: 200px;
+  height: 125px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0px 1px 2px rgba(100,100,100,.5);
-  background-color: rgba(83,60,49,.55);
+  /*box-shadow: 0px 1px 2px rgba(100,100,100,.5);*/
+  color: rgba(83,60,49,.55);
   font-size: 1.2rem;
 }
 
@@ -239,47 +241,59 @@ main {
 .show-project{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .visit{
+  height: 300px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 
-  height: 350px;
-  width: 100%;
+.info {
+  color: #C1D9DC;
   cursor: pointer;
 }
 
 .visit-links {
-  opacity: 0;
-  position: relative;
-  height: 100%;
-  width: 100%;
+  /*position: relative;*/
+  margin-top: 40px;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
 }
 
 .visit-here {
-  height: 20%;
-  border: 5px white solid;
-  width: 50%;
+  height: 70px;
+  border: 2px rgba(78,146,154,.35) solid;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1.5s ease;
+  transition: all .5s ease;
 
+}
+
+.visit-here:hover {
+  background-color: rgba(78,146,154,.55);
+  border: 2px solid #C1D9DC;
+}
+
+.visit-here:hover a {
+  color: white;
 }
 
 .visit-here a {
   text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
+  color: rgba(78,146,154,.35);
+  font-size: 1.3rem;
+
 }
 
-.visit-links:hover {
-  opacity: 1;
-}
 
 ul{
   list-style: none;
@@ -334,7 +348,6 @@ ul{
 
 }
 
-
 footer {
   margin-top: 100px;
   /*background-color: rgba(78,146,154,.5);*/
@@ -370,10 +383,8 @@ footer {
 }
 
 #single1 {
-
-  background-color: rgba(78,146,154,.5);
+  color: rgba(78,146,154,.5);
   background-size: 100% 100%;
-  color: rgba(255,255,255,1);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -383,16 +394,10 @@ footer {
   transition: all 1.5s ease;
 }
 
-#project1:hover {
-  background-color: rgb(44,55,54);
-  background-image: none;
-  transition: all 1.5s ease;
-}
 
 #single2 {
+  color: rgba(78,146,154,.5);
   background-size: 100% 100%;
-  background-color: rgba(78,146,154,.5);
-  color: rgba(255,255,255,1);
   font-family: 'Slabo 27px', serif;
 }
 
@@ -402,15 +407,8 @@ footer {
   transition: all 1.5s ease;
 }
 
-#project2:hover {
-   background-color: rgb(44,55,54);
-  background-image: none;
-  transition: all 1.5s ease;
-}
-
 #single3, #singleBobs, #singleMastermind {
-  background-color: rgba(78,146,154,.5);
-  color: rgba(255,255,255,1);
+  color: rgba(78,146,154,.5);
   display: flex;
   align-items: center;
 }
@@ -429,19 +427,13 @@ footer {
   transition: all 1.0s ease;
 }
 
-#project3:hover {
-   background-color: rgb(44,55,54);
-  background-image: none;
-
-}
-
 #singleExposed {
-  background-color: rgba(78,146,154,.5);
-  color: rgba(255,255,255,1);
+  color: rgba(78,146,154,.5);
   display: flex;
   align-items: center;
   font-family: 'Raleway', sans-serif;
 }
+
 
 #projectExposed {
   background-image: url("images/exposed-detail.png");
@@ -449,20 +441,11 @@ footer {
   transition: all 1.0s ease;
 }
 
-#projectExposed:hover {
-  background-color: rgb(44,55,54);
-  background-image: none;
-}
-
+/* NEED TO GET RID OF THESE HOVERS eventually */
 #projectBobs {
   background-image: url("images/bobs-detail.png");
   background-size: cover;
   transition: all 1.0s ease;
-}
-
-#projectBobs:hover {
-  background-color: rgb(44,55,54);
-  background-image: none;
 }
 
 #projectMastermind {
@@ -471,76 +454,16 @@ footer {
   transition: all 1.0s ease;
 }
 
-#projectMastermind:hover {
-  background-color: rgb(44,55,54);
-  background-image: none;
-}
-
 #chew, #exposed, #bobs, #gWL, #rr, #mastermind {
   transition: all .2s ease;
 }
 
-#exposed {
-  height: calc(744.51px);
+#exposed:hover, #rr:hover, #gWL:hover, #chew:hover, #bobs:hover, #mastermind:hover {
+  /*transform: scale(1.001);*/
+  box-shadow: 3px 3px 10px rgba(175,175,175,.5);
 }
 
-#gWL {
-  margin-top: calc(10% + 200px);
-  height: calc(744.51px);
-}
 
-#bobs {
-  margin-top: calc(10% + 400px);
-}
-
-#chew {
-  margin-top: calc(10% + 200px);
-  height: calc(744.51px - 25%);
-}
-
-#rr {
-  margin-top: calc(10% + 400px);
-}
-
-#mastermind {
-  height: 744.51px;
-}
-
-#exposed:hover {
-  z-index: 2;
-  transform: scale(1.001);
-  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
-}
-
-#rr:hover {
-  z-index: 2;
-  transform: scale(1.001);
-  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
-}
-
-#gWL:hover {
-  z-index: 2;
-  transform: scale(1.001);
-  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
-}
-
-#chew:hover {
-  z-index: 2;
-  transform: scale(1.001);
-  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
-}
-
-#bobs:hover {
-  z-index: 2;
-  transform: scale(1.001);
-  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
-}
-
-#mastermind:hover {
-  z-index: 2;
-  transform: scale(1.001);
-  box-shadow: 5px 5px 10px rgba(175,175,175,.5);
-}
 
 
 
@@ -581,21 +504,6 @@ footer {
       width: 50%;
   }
 
-  #gWL {
-    margin-top: 10%;
-  }
-
-  #bobs {
-    margin-top: 10%;
-  }
-
-  #chew {
-    margin-top: 10%;
-  }
-
-  #rr {
-    margin-top: 10%;
-  }
 }
 
 @media (max-width: 1050px) {
@@ -642,7 +550,7 @@ footer {
       margin-bottom: 10px;
       font-size: 2.5rem;
     }
-
+/*media*/
     .intro {
       padding-left: 0px;
       padding-right: 0px;
@@ -686,14 +594,14 @@ footer {
       padding: 0;
       width: 100%;
     }
-
+/* MEDIA */
     .media-icons {
       padding-right: 0px;
       padding-top: 5px;
     }
 
     .single-project{
-      height: 250px;
+
       margin-bottom: 0px;
     }
 
@@ -718,7 +626,7 @@ footer {
     .statement {
       width: 90%;
     }
-
+/*MEDIA*/
     .contact-me {
       width: 90%;
     }
