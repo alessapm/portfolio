@@ -19,6 +19,70 @@ $(document).ready(function(){
   const visitMaster = $('#visitMastermind');
 
 
+  const project = $('.project');
+  const theWindow = $(window);
+
+  const infoBtns = $('.info');
+  const closeBtns = $('.close');
+  const techDetails = $('.tech-used');
+
+  theWindow.on('scroll', check_view);
+  theWindow.on('scroll resize', check_view);
+
+
+   function check_view(){
+    // console.log('inside check view');
+
+    let window_height = theWindow.height();
+    let window_top_position = theWindow.scrollTop();
+    let window_bottom_position = (window_top_position + window_height);
+
+    $.each(project, function(){
+      let element = $(this);
+      let element_height = element.outerHeight();
+      let element_top_position = element.offset().top;
+      let element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is within viewport
+      if ((element_bottom_position >= window_top_position) &&
+          (element_top_position <= window_bottom_position)) {
+        element.addClass('animate');
+      } else {
+        element.removeClass('animate');
+      }
+    });
+  }
+
+  $.each(infoBtns, function(){
+    let btn = $(this);
+    let details = btn.parent().prev().children().first();
+    btn.click(function(){
+      details.addClass('bounceDown');
+      details.removeClass('bounceUp');
+    })
+  })
+
+  // $.each(closeBtns, function(){
+  //   let close = $(this);
+  //   let details = close.parent();
+  //   close.click(function(){
+  //     details.addClass('bounceUp');
+  //     details.removeClass('bounceDown');
+  //   })
+  // })
+
+  $.each(techDetails, function(){
+    let details = $(this);
+    details.click(function(){
+      details.addClass('bounceUp');
+      details.removeClass('bounceDown');
+    })
+  })
+
+
+
+
+
   //loading screen animation:
   // loadScreen.css('visibility', 'visible');
 

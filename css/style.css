@@ -1,4 +1,5 @@
-/* BLUE - rgba(78,146,154,.35);*/
+/* BLUE - rgba(78,146,154,.35);  or solid color: #C1D9DC */
+/* gray rgba(216,216,216,1) */
 
 body {
   height: 100%;
@@ -63,6 +64,66 @@ header {
   }
 }
 
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -200px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 35px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 15px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes bounceUp {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 35px, 0);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translate3d(0, -40px, 0);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translate3d(0, 15px, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -800px, 0);
+  }
+}
+
+
+.bounceDown {
+  -webkit-animation: bounceInDown .7s linear;
+  animation: bounceInDown .7s linear;
+  visibility: visible !important;
+}
+
+.bounceUp {
+   -webkit-animation: bounceUp .7s linear;
+  animation: bounceUp .7s linear;
+  visibility: hidden !important;
+  transition: visibility 1s linear;
+  opacity: 0;
+}
 
 .intro {
   display: flex;
@@ -74,7 +135,6 @@ header {
   margin-left: 150px;
   margin-right: 150px;
 }
-
 
 .intro h1 {
   font-size: 9em;
@@ -118,8 +178,10 @@ h2 {
   color: rgba(78,146,154,.5);
   font-size: 1.35rem;
 
-  -webkit-animation: slideInLeft 1.2s ease-in;
-    animation: slideInLeft 1.2s ease-in;
+  -webkit-animation: fadeIn 1.2s ease-in;
+  animation: fadeIn 1.2s ease-in;
+ /* -webkit-animation: slideInLeft 1.2s ease-in;
+    animation: slideInLeft 1.2s ease-in;*/
 }
 
 .intro li {
@@ -132,8 +194,10 @@ h2 {
   padding-left: 50%;
   letter-spacing: 1.6px;
   font-size: 1.2rem;
-  -webkit-animation: slideInLeft 1.2s ease-in;
-  animation: slideInLeft 1.2s ease-in;
+   -webkit-animation: fadeIn 1.5s ease-in;
+  animation: fadeIn 1.5s ease-in;
+/*  -webkit-animation: slideInLeft 1.2s ease-in;
+  animation: slideInLeft 1.2s ease-in;*/
 }
 
 
@@ -164,7 +228,6 @@ h2 {
     opacity: 1;
     transform: scale(1, 1);
   }
-
 
 }
 
@@ -214,7 +277,7 @@ main {
   border: 2px solid rgba(78,146,154,.35);
   margin-top: 200px;
   width: 30%;
-  height: 600px;
+  height: 570px;
 }
 
 .single-project{
@@ -257,6 +320,14 @@ main {
   cursor: pointer;
 }
 
+.close {
+  align-self: flex-end;
+  /*position: relative;
+  top: -55px;*/
+  margin-top: 0;
+  cursor: pointer;
+}
+
 .visit-links {
   /*position: relative;*/
   margin-top: 40px;
@@ -275,11 +346,10 @@ main {
   justify-content: center;
   align-items: center;
   transition: all .5s ease;
-
 }
 
 .visit-here:hover {
-  background-color: rgba(78,146,154,.55);
+  background-color: rgba(78,146,154,.35);
   border: 2px solid #C1D9DC;
 }
 
@@ -291,7 +361,6 @@ main {
   text-decoration: none;
   color: rgba(78,146,154,.35);
   font-size: 1.3rem;
-
 }
 
 
@@ -300,15 +369,27 @@ ul{
   padding: 0;
 }
 
-.tech-used{
+.tech-container{
+  /*border: 2px solid red;*/
+  position: relative;
   width: 100%;
-  text-align: left;
+}
+
+.tech-used{
+  width: calc(100% - 20px);
+  height: 300px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 1rem;
-
+  background-color: #C1D9DC;
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .tech-used ul {
@@ -330,11 +411,6 @@ ul{
   color: black;
 }
 
-.tech-used a:hover {
-  color: rgba(161,148,142,1);
-  font-weight: bold;
-}
-
 .description {
   font-style: italic;
 }
@@ -345,7 +421,22 @@ ul{
   align-items: center;
   line-height: 25px;
   height: 300px;
+}
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate {
+  -webkit-animation: fadeIn 1.5s ease-in;
+  animation: fadeIn 1.5s ease-in;
+  opacity: 1 !important;
 }
 
 footer {
@@ -441,7 +532,6 @@ footer {
   transition: all 1.0s ease;
 }
 
-/* NEED TO GET RID OF THESE HOVERS eventually */
 #projectBobs {
   background-image: url("images/bobs-detail.png");
   background-size: cover;
@@ -455,7 +545,7 @@ footer {
 }
 
 #chew, #exposed, #bobs, #gWL, #rr, #mastermind {
-  transition: all .2s ease;
+  transition: all .2s linear;
 }
 
 #exposed:hover, #rr:hover, #gWL:hover, #chew:hover, #bobs:hover, #mastermind:hover {
