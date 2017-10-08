@@ -50,9 +50,8 @@ $(document).ready(function(){
       } else {
         element.removeClass('animate');
       }
-
-  }, 700) //closes setInterval
-
+    });
+  }
 
   $.each(infoBtns, function(){
     let btn = $(this);
