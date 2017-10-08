@@ -23,6 +23,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
   height: 50px;
   width: 100%;
   background-color: rgba(245,245,245,.9);
@@ -612,6 +613,10 @@ footer {
     width: 45%;
   }
 
+  .tech-used {
+    width: 90%;
+  }
+
 }
 
 @media (max-width: 1050px) {
@@ -628,9 +633,9 @@ footer {
     padding-left: 0%;
     /*height: 160px;*/
   }
-
-
 }
+
+
 
 
 @media (max-width: 700px){
@@ -695,8 +700,12 @@ footer {
       height: 450px;
     }
 
+    .visit-links {
+      flex-direction: column;
+    }
+
     .visit-here {
-      width: 50%;
+      width: 60%;
     }
 
     #header-box {
@@ -750,7 +759,7 @@ footer {
     }
 
     .project {
-      width: 100%;
+      width: 80%;
       height: 800px;
     }
 
@@ -815,7 +824,16 @@ footer {
   }
 
   .project {
-    width: calc(100% - 4px);
+    width: 80%;
+    height: 900px;
+  }
+
+  .visit-links {
+    margin-top: 20px;
+  }
+
+  .tech-used {
+    height: 450px;
   }
 
   #rr:hover {
