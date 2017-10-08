@@ -50,49 +50,9 @@ $(document).ready(function(){
       } else {
         element.removeClass('animate');
       }
-<<<<<<< HEAD
 
   }, 700) //closes setInterval
 
-
-
-
-// visit-links click event:
-
-  function showlinks1(){
-    project1.css({
-      'background-color': 'rgb(44,55,54)',
-      'background-image': 'none'
-    })
-
-    visit1.css('opacity','1')
-  }
-
-  function hidelinks1(){
-    project1.css({
-      'background-image': 'url("./css/images/remoteread-detail.png")'
-    });
-
-    visit1.css('opacity','0');
-
-  }
-
-  function showlinks2(){
-    project2.css({
-      'background-color': 'rgb(44,55,54)',
-      'background-image': 'none'
-    })
-
-    visit2.css('opacity','1')
-  }
-
-  function hidelinks2(){
-    project2.css({
-      'background-image': 'url("./css/images/chewser-detail.png")'
-=======
->>>>>>> update2
-    });
-  }
 
   $.each(infoBtns, function(){
     let btn = $(this);
