@@ -7,18 +7,20 @@
     <title>Alessa Messineo</title>
     <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Slabo+27px|Bungee+Outline|Raleway" rel="stylesheet">
+    <!--  css -->
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/e4a8e5d508.js"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- js -->
     <script type="text/javascript" src="./js/update.js" defer></script>
-
   </head>
   <body>
 
     <div id="container">
-
       <header>
         <div id="header-box">
           <h3>Alessa Messineo</h3>
@@ -43,7 +45,6 @@
             </ul>
             <p class="hello">I'm a web developer based out of New York City who loves to talk about new ideas.  I like putting my creative problem solving skills to work by building beautiful, dynamic websites.
             When I'm not busy working, I'm off exploring the city, reading, or cooking up something delicious. </p>
-
           </div>
       </header>
 
@@ -56,40 +57,49 @@
             </div>
             <div class="project-details">
               <div class="show-project">
-                  <div class="visit" id="projectExposed">
-                    <div class="visit-links" id="visitExposed">
-                      <div class="visit-here">
-                        <a href="https://ga-exposed.github.io/code/" target="_blank">Visit Website</a>
-                      </div><br>
-                      <div class="visit-here">
-                        <a href="https://github.com/GA-Exposed/code/" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
-                  </div>
+                <div class="tech-container">
                   <div class="tech-used">
-                    <h3>Technologies Used</h3>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>Google Maps</li>
-                    </ul>
-                    <!-- <p>A prototype site developed for SMPLCT Lab's Exposed 2017 conference on wellness and sustainability.</p> -->
+                    <!-- <i class="fa fa-times fa-lg close" aria-hidden="true"></i> -->
+                    <!-- <h3>Exposed Conference Site</h3> -->
+                    <p>A prototype site developed for SMPLCT Lab's Exposed 2017 conference on wellness and sustainability.
+                    The site was created along with UX designers and built using HTML, CSS, JavaScript and Google Maps </p>
                   </div>
+                </div>
+                <div class="visit" id="projectExposed">
+                  <i class="fa fa-info-circle fa-2x info" aria-hidden="true"></i>
+                </div>
+
+                <div class="visit-links" id="visitExposed">
+                  <div class="visit-here">
+                    <a href="https://ga-exposed.github.io/code/" target="_blank">Visit Website</a>
+                  </div><br>
+                  <div class="visit-here">
+                    <a href="https://github.com/GA-Exposed/code/" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
 
 
-            <div class="project" id="gWL">
+          <div class="project" id="gWL">
             <div class="single-project" id="single3">
-              <img src="./css/images/get-wanderflust-white-01.svg" />
+              <img src="./css/images/get-wanderlust-blue.svg" />
             </div>
             <div class="project-details">
               <div class="show-project">
-
+                <div class="tech-container">
+                  <div class="tech-used">
+                    <!-- <i class="fa fa-times fa-lg close" aria-hidden="true"></i> -->
+                    <!-- <h3>getWanderlust</h3> -->
+                    <p>A photo-inspired travel site that allows users to search beautiful, high-res photos of a city to get inspiration and view these alongside a list of the city’s popular tourist attractions. It combines Getty Images’ and Yelp’s APIs in order to bring about a paired search that will inspire both the amateur and experienced traveler.
+                    The app uses React and Node.js as it's main technologies.  </p>
+                  </div>
+                </div>
                 <div class="visit" id="project3">
-                  <div class="visit-links" id="visit3">
+                  <i class="fa fa-info-circle fa-2x info" aria-hidden="true"></i>
+                </div>
+                <div class="visit-links" id="visit3">
                     <div class="visit-here">
                       <a href="https://getwanderlust.herokuapp.com/" target="_blank">Visit Website</a>
                     </div><br>
@@ -97,99 +107,64 @@
                       <a href="https://github.com/alessapm/getWanderLust" target="_blank">View on GitHub</a>
                     </div>
                   </div>
-                </div>
-              <div class="tech-used">
-
-                <h3> Technologies Used</h3>
-                <ul class="long-list">
-                  <li>Node.js</li>
-                  <li>React</li>
-                  <li>JavaScript</li>
-                  <li>Yelp API</li>
-                  <li>Axios</li>
-                  <li>PSQL</li>
-                  <li>HTML/CSS</li>
-                  <li>Getty Images API</li>
-
-                </ul>
-                <!-- <p class="description">A photo-inspired travel site that allows users to search beautiful, high-res photos of a city to get inspiration <br>and view these alongside a list of the city’s popular tourist attractions.</p>
-                <p> The app uses React and Node.js as it's main technologies. It combines Getty Images’ and Yelp’s APIs in order to bring about a paired search that will inspire both the amateur and experienced traveler. </p> -->
-              </div>
-
               </div>
             </div>
           </div>
 
           <div class="project" id="bobs">
             <div class="single-project" id="singleBobs">
-              <h1>Which Bob's Burgers Character Are You?</h1>
-
+              <h1 id="bobs-title">Which Bob's Burgers Character Are You?</h1>
             </div>
             <div class="project-details">
               <div class="show-project">
-
-                <div class="visit" id="projectBobs">
-                  <div class="visit-links" id="visitBobs">
-                    <div class="visit-here">
-                      <a href="https://bobs-burgers-quiz.herokuapp.com" target="_blank">Visit Website</a>
-                    </div><br>
-                    <div class="visit-here">
-                      <a href="https://github.com/alessapm/bobs_burgers_quiz" target="_blank">View on GitHub</a>
-                      </div>
+                <div class="tech-container">
+                  <div class="tech-used">
+                    <!-- <i class="fa fa-times fa-lg close" aria-hidden="true"></i> -->
+                    <!-- <h3>Bob's Burgers Character Quiz </h3> -->
+                    <p>A fun quiz app for people who like the TV show 'Bob's Burgers' to determine which of the five main characters they would be. The site uses a Ruby on Rails API paired with React and styled using bootstrap. </p>
                   </div>
                 </div>
-                <div class="tech-used">
-
-                  <h3>Technologies Used</h3>
-                  <ul>
-                    <li>Ruby on Rails</li>
-                    <li>React</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                  <!-- <p class="description">A Node.js application designed for book lovers to create private groups and for book club style discussions.</p>
-                  <p> Remote Read is designed to function as a book club for friends who live too far apart to get together on a regular basis. With Remote Read, you never need to let distance ruin your conversation, or your shared love of books! <br><br>
-                   Users can create accounts, create and join groups, post book club selections to their groups, and comment on the existing selections in the group.
-                   </p> -->
+                <div class="visit" id="projectBobs">
+                  <i class="fa fa-info-circle fa-2x info" aria-hidden="true"></i>
+                </div>
+                <div class="visit-links" id="visitBobs">
+                  <div class="visit-here">
+                    <a href="https://bobs-burgers-quiz.herokuapp.com" target="_blank">Visit Website</a>
+                  </div><br>
+                  <div class="visit-here">
+                    <a href="https://github.com/alessapm/bobs_burgers_quiz" target="_blank">View on GitHub</a>
+                  </div>
+                </div>
               </div>
-
-              </div>
-
             </div>
           </div>
 
           <div class="project" id="rr">
             <div class="single-project" id="single1">
               <h1>Remote Reader</h1>
-
             </div>
             <div class="project-details">
               <div class="show-project">
-
-                <div class="visit" id="project1">
-                  <div class="visit-links" id="visit1">
-                    <div class="visit-here">
-                      <a href="https://remote-read.herokuapp.com/books/" target="_blank">Visit Website</a>
-                    </div><br>
-                    <div class="visit-here">
-                      <a href="https://github.com/alessapm/remote_read" target="_blank">View on GitHub</a>
-                      </div>
+                <div class="tech-container">
+                  <div class="tech-used">
+                    <!-- <i class="fa fa-times fa-lg close" aria-hidden="true"></i> -->
+                    <!-- <h3>Remote Reader</h3> -->
+                    <p> Remote Reader is designed to function as a digital book club for friends who live too far apart to get together. <br><br>
+                    It is a full MVC Node application, with views generated server side using EJS. The app relies on a postgres database and is styled using SCSS.
+                   </p>
                   </div>
                 </div>
-                <div class="tech-used">
-
-                  <h3>Technologies Used</h3>
-                  <ul>
-                    <li>Node.js/Express.js</li>
-                    <li>JavaScript</li>
-                    <li>PSQL</li>
-                    <li>SASS</li>
-                    <li>HTML</li>
-                  </ul>
-                  <!-- <p class="description">A Node.js application designed for book lovers to create private groups and for book club style discussions.</p>
-                  <p> Remote Read is designed to function as a book club for friends who live too far apart to get together on a regular basis. With Remote Read, you never need to let distance ruin your conversation, or your shared love of books! <br><br>
-                   Users can create accounts, create and join groups, post book club selections to their groups, and comment on the existing selections in the group.
-                   </p> -->
-              </div>
+                <div class="visit" id="project1">
+                  <i class="fa fa-info-circle fa-2x info" aria-hidden="true"></i>
+                </div>
+                <div class="visit-links" id="visit1">
+                  <div class="visit-here">
+                    <a href="https://remote-read.herokuapp.com/books/" target="_blank">Visit Website</a>
+                  </div><br>
+                  <div class="visit-here">
+                    <a href="https://github.com/alessapm/remote_read" target="_blank">View on GitHub</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -197,13 +172,22 @@
           <div class="project" id="chew">
             <div class="single-project" id="single2">
               <h1>Chewser</h1>
-
             </div>
             <div class="project-details">
               <div class="show-project">
-
+                <div class="tech-container">
+                  <div class="tech-used">
+                    <!-- <i class="fa fa-times fa-lg close" aria-hidden="true"></i> -->
+                    <!-- <h3>Chewser Restaurant Selector</h3> -->
+                    <p>A helpful app that searches your area for  local restaurants and selects a single option for you. No more wasting time deciding on where to eat- let Chewser choose for you! <br><br>
+                    This React application uses the Yelp API to grab places based on geolocation and suggest a restaurant. You can exclude specific restaurants and cuisine types.
+                    </p>
+                  </div>
+                </div>
                 <div class="visit" id="project2">
-                  <div class="visit-links" id="visit2">
+                  <i class="fa fa-info-circle fa-2x info" aria-hidden="true"></i>
+                </div>
+                <div class="visit-links" id="visit2">
                     <div class="visit-here">
                       <a href="https://chewser.herokuapp.com" target="_blank">Visit Website</a>
                     </div><br>
@@ -212,21 +196,6 @@
                       <a href="https://github.com/alessapm/chewser_react" target="_blank">View on GitHub</a>
                       </div>
                   </div>
-                </div>
-                <div class="tech-used">
-
-                  <h3>Technologies Used</h3>
-                  <ul>
-                    <li>React</li>
-                    <li>Yelp API</li>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>HTML/CSS</li>
-                  </ul>
-                  <!-- <p class="description">A helpful app that searches your area for  local restaurants and selects a single option for you. No more wasting time deciding on where to eat- let Chewser choose for you!</p>
-                  <p> This React application uses the Yelp API to grab places based on geolocation and suggest a restaurant. The user can then choose to search for another place, if desired. Chewser was created in collaboration with <a href ="http://marcelhamel.com" target="_blank"> Marcel Hamel</a>.</p> -->
-
-              </div>
               </div>
             </div>
           </div>
@@ -234,35 +203,28 @@
         <div class="project" id="mastermind">
             <div class="single-project" id="singleMastermind">
               <h1>Code Breaker</h1>
-
             </div>
             <div class="project-details">
               <div class="show-project">
-
-                <div class="visit" id="projectMastermind">
-                  <div class="visit-links" id="visitMastermind">
-                    <div class="visit-here">
-                      <a href="https://alessapm.github.io/mastermindgame/" target="_blank">Visit Website</a>
-                    </div><br>
-                    <div class="visit-here">
-                      <a href="https://github.com/alessapm/mastermindgame" target="_blank">View on GitHub</a>
-                    </div>
+                <div class="tech-container">
+                  <div class="tech-used">
+                    <!-- <i class="fa fa-times fa-lg close" aria-hidden="true"></i> -->
+                    <!-- <h3>Code Breaker</h3> -->
+                    <p>A simple sequence-guessing game with the user's goal being to correctly guess the order of a 4-color sequence. Built with HTML, CSS and jQuery. </p>
                   </div>
                 </div>
-                <div class="tech-used">
-
-                  <h3>Technologies Used</h3>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>jQuery</li>
-                  </ul>
-                  <!-- <p class="description"> A simple sequence-guessing game with the user's goal being to correctly guess the order of a 4-color sequence.
-                   </p> -->
+                <div class="visit" id="projectMastermind">
+                  <i class="fa fa-info-circle fa-2x info" aria-hidden="true"></i>
+                </div>
+                <div class="visit-links" id="visitMastermind">
+                  <div class="visit-here">
+                    <a href="https://alessapm.github.io/mastermindgame/" target="_blank">Visit Website</a>
+                  </div><br>
+                  <div class="visit-here">
+                    <a href="https://github.com/alessapm/mastermindgame" target="_blank">View on GitHub</a>
+                  </div>
+                </div>
               </div>
-
-              </div>
-
             </div>
           </div>
 
@@ -271,11 +233,11 @@
         <footer>
           <div class="finale">
             <div class="statement">
-              <h4>More About Me </h4>
+              <h4>More About Me</h4>
               <p>I am a native New Yorker, sci-fi enthusiast, and perpetual learner. Most importantly, I am an ambitious young woman looking to combine my web development skills and previous professional experiences in order to benefit others. I am an organized, empathetic, and purpose-driven problem solver who is looking to apply my skills and ideas to working with new technologies and building beautiful applications. </p>
             </div>
             <div class ="contact-me">
-              <h4 class="thank-you">Thank you for visiting my portfolio site, I'd love to talk to you about my work and experiences. <br><br> Connect with me for job opportunities,<br> project collaboration, or to chat</h4>
+              <h4 class="thank-you">Thank you for viewing my portfolio, I'd love to talk to you about my work and experiences. <br><br> Connect with me for job opportunities,<br> project collaboration, or to chat</h4>
               <div class="contact-icons">
                 <a href="https://github.com/alessapm" target="_blank"><img class="logo" src="css/logos/github.png"></a>
                 <a href="mailto:apmessineo@gmail.com?Subject=Re: Developer Portfolio" target="_blank"><img class="logo" src="css/logos/mail.png"></a>
