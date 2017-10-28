@@ -757,6 +757,10 @@ footer {
       height: calc(100vh - 50px);
     }
 
+  .visit-links {
+    margin-bottom: 20px;
+  }
+
 }
 
 @media (max-width: 500px){
@@ -852,7 +856,7 @@ footer {
 
 
   .project {
-    height: 100vh;
+    height: calc(100vh - 1px);
   }
 
   .single-project h1 {
