@@ -523,12 +523,10 @@ footer {
   transition: all 1.0s ease;
 }
 
-#chew, #exposed, #bobs, #gWL, #rr, #mastermind {
-  transition: all .2s linear;
-}
 
-#exposed:hover, #rr:hover, #gWL:hover, #chew:hover, #bobs:hover, #mastermind:hover {
+.project:hover {
   /*transform: scale(1.001);*/
+  transition: all .2s linear;
   box-shadow: 3px 3px 10px rgba(175,175,175,.5);
 }
 
