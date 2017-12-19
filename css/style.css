@@ -524,7 +524,7 @@ footer {
 }
 
 
-.project:hover {
+.project:hover, #NYAC:hover {
   /*transform: scale(1.001);*/
   transition: all .2s linear;
   box-shadow: 3px 3px 10px rgba(175,175,175,.5);
