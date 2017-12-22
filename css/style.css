@@ -496,12 +496,28 @@ footer {
   transition: all 1.0s ease;
 }
 
+#projectMortgage {
+  background-image: url("images/MortgageHouses.png");
+  background-size: cover;
+  background-position: center;
+  transition: all 1.0s ease;
+}
+
 
 #singleExposed, #singleNYAC {
   color: rgba(78,146,154,.5);
   display: flex;
   align-items: center;
   font-family: 'Raleway', sans-serif;
+}
+
+#singleExposed {
+  font-variant: small-caps;
+}
+
+#singleMortgage {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: rgba(78,146,154,.5);
 }
 
 
